@@ -1,9 +1,7 @@
-document.addEventListener("DOMContentLoaded", () => {
   const searchBtn = document.getElementById("searchBtn");
   const clearBtn = document.getElementById("clearBtn");
   const searchInput = document.getElementById("searchInput");
   const resultsDiv = document.getElementById("results");
-
   let travelJSONData = null;
 
   // Load JSON data
@@ -20,13 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputString = searchInput.value.trim().toLowerCase();
     resultsDiv.innerHTML = "";
 
-    if (!travelJSONData) {
-      resultsDiv.innerHTML = "<p>Loading data... please wait.</p>";
-      return;
-    }
-
     if (!inputString) {
-      resultsDiv.innerHTML = "<p>Please enter a destination or keyword.</p>";
+      resultsDiv.innerHTML = "<p>Please enter travel destination.</p>";
       return;
     }
 
@@ -35,18 +28,18 @@ document.addEventListener("DOMContentLoaded", () => {
     // Acceptable search words are: 'country', 'temple', 'beach'
     if (inputString === "country") {
       travelJSONData.countries?.forEach(country => {
-        // Limit to first 2 cities per country
+        // Get two cities per country
         country.cities?.slice(0, 2).forEach(city => {
           results.push(city);
         });
       });
     } else if (inputString === "temple") {
-      results = travelJSONData.temples?.slice(0, 2) || [];
+      results = travelJSONData.temples?.slice(0, 2); //Get two temples only
     } else if (inputString === "beach") {
-      results = travelJSONData.beaches?.slice(0, 2) || [];
+      results = travelJSONData.beaches?.slice(0, 2); // Get two beaches only
     } else {
       resultsDiv.innerHTML =
-        "<p>Invalid keyword! Use 'country', 'temple', or 'beach'.</p>";
+        "<p>Invalid search word! Please use 'country', 'temple', or 'beach'.</p>";
       return;
     }
 
@@ -82,4 +75,3 @@ document.addEventListener("DOMContentLoaded", () => {
     resultsDiv.innerHTML = "";
     resultsDiv.classList.remove("show-results");
   });
-});
