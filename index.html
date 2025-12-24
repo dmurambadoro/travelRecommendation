@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Travel Recommendations For You!</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <divv>
+                <ul class="ul1-bar">
+                    <li><img src="travel_logo.jpeg" alt="Logo" class="nav-icon"></li>
+                    <li class="travel-text">Travel Recommendation</li>
+                </ul>
+            </divv>
+            <div>
+                <ul>
+                    <li><a href="./index.html" id="home">Home </a></li>
+                    <li><a href="./about_us.html" id="about">About Us </a></li>
+                    <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+                </ul>
+            </div>
+            <div>
+                <ul class="ul3-bar">
+                    <li><input type="text" id="searchInput" placeholder="Enter a place name ?"></li>
+                    <li><button id="searchBtn">Search</button></li>
+                    <li><button id="clearBtn">Clear</button></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="sidebar">
+                <div class="vline"></div>  
+                <ul class="social-icons no-bullets">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+            </div>
+            <div class="content">
+                <h1><strong>Explore your dream destinations</strong></h1>
+                <p>
+                    Step outside your comfort zone and explore new places. <br>
+                    Broaden your horizons and embrace experiences beyond the familiar.<br>
+                    You have only one life—make it meaningful by learning, growing, and enjoying new adventures.<br>
+                    Clear your bucket list before it's too late. You get it? <br>
+                </p>
+            </div>
+            <div id="results" class="results-section">
+            </div>
+        </div>
+        <button id="book-now">BOOK NOW</button>
+        
+
+        <script src="./travel_recommendation.js"></script>
+    </body>
+</html>

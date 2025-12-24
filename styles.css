@@ -1,0 +1,362 @@
+/* Basic CSS for the navigation bar */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+
+nav {
+    background-color: #f0f0f0;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+  }
+  
+  nav ul {
+    display: flex; /* added DM*/
+    list-style-type: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 10px;
+    border: 0px solid;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .nav-icon {
+    width: 100px;
+    height: auto;
+  }
+  .ul1-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .ul3-bar {
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    border-style: none;
+    padding: 1cap;
+    background-color: #ffffff;
+  }
+
+  .no-bullets {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  .no-bullets li button {
+    background-color: #4a90e2;
+  }
+
+  .travel-text {
+    display: flex;
+    align-items: center;
+    }
+  
+  /* Basic CSS for the form elements */
+  body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-image: url('kc.jpeg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* margin: 20px; */
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: whitesmoke;
+  }
+  
+  div {
+    margin-bottom: 10px;
+  }
+  
+  label {
+    display: inline-block;
+    width: 100px;
+  }
+  
+  input[type="text"],
+  input[type="number"],
+  select {
+    width: 200px;
+    padding: 5px;
+    border: 0px;
+  }
+  
+button {
+    padding: 8px 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+/* Basic CSS for the report section */
+h2 {
+    margin-top: 0px;
+  }
+
+p {
+    margin-bottom: 20px; /* adjust size as needed */
+}
+  
+#report,#results {
+    padding: 10px;
+    max-width: 400px;
+    word-wrap: break-word;
+  }
+
+#results{
+  height: 400px;
+  width: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+  #results img{
+    width: 200px;
+    height: 100px;
+  }
+
+/* container class has sidebar, content & results divs*/
+.container {
+    display: grid;
+    grid-template-columns: 1fr 10fr 10fr; 
+    gap: 20px;
+    align-items: start;
+    flex-wrap: wrap;         /* make it responsive on small screens */
+
+}
+
+    .container .sidebar {
+        background:none;
+        padding: 20px;
+        }
+
+    .container .content {
+        background: none;
+        padding-top: 80px;
+        width: 500px;
+        align-content: center;
+    }
+
+
+    .container .results {
+        background: green;
+        padding-top: 80px;
+        width: 500px;
+        align-content: center;
+    }
+
+    .container .contact-msg-content {
+        display: flex;
+        flex: 50;
+        gap: 100px;
+        margin-top: 50px;
+    }
+
+    .form-label {
+        color: white;
+    }
+
+    .about-container .box {
+        flex: 1;                 /* boxes take equal width */
+        min-width: 250px;        /* prevents shrinking too small */
+        background: none;
+        padding: 20px;
+        color: #ffffff;
+    }
+
+    .about-container .box-team {
+        flex: 1;                 /* boxes take equal width */
+        min-width: 100px;        /* prevents shrinking too small */
+        background: none;
+        padding: 20px;
+        margin-left: 0px;
+        margin-top: 0px;
+        width: 150px;
+        color: #ffffff;
+    }
+
+/* Sidebar column has vline and social media icons */
+.sidebar {
+    display: flex;
+    flex-direction:column;
+    align-items: left;
+    gap: 20px;
+    width: 10px
+}
+
+/* style vertical line */
+.vline {
+    position: fixed;
+    border-left: 2px solid #ccc;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+/* social media platform icons */
+.social-icons {
+    position: fixed; /* floating icons */
+    top: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    z-index:999;
+}
+
+    /* Spacing between social icons */
+    .social-icons li {
+        margin: 10px 0;
+    }
+
+    /* Optional: Make icons bigger */
+    .social-icons i {
+        font-size: 20px;
+    }
+
+
+    .social-icons a {
+        font-size: 24px;
+        color: whitesmoke;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+        .social-icons a:hover {
+            color: #4a90e2;
+        }
+
+/* Content column */
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* aligns all children to the left */
+    padding-right: 20px;
+
+}
+
+#book-now {
+    padding: 14px 28px;
+    background-color: #4a90e2;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    /* margin: 20px auto;    /* center horizontally */
+    margin: 20px 80px;
+    display: block;
+    align-self:flex-start;
+}
+
+    #book-now:hover {
+        background-color: #397ac5;
+    }
+
+.about-container {
+    display: flex;
+    gap: 20px; 
+  } 
+
+/* Search results */
+.results-section {
+  position: fixed;
+  top: 225px; 
+  left: 75%;
+  transform: translateX(-50%);
+  width: 100%;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 20px;
+  z-index: 1000;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.result-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 90%;
+  max-width: 600px;
+  overflow: scroll; /*hiden;*/
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.results-section.show-results {
+  display: flex;
+}
+
+.result-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+.result-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.card-content h3 {
+  color: #073135;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+}
+
+
+/* Scrollbar for results box */
+.results-section::-webkit-scrollbar {
+  width: 8px;
+}
+.results-section::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 5px;
+}

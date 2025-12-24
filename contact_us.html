@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>About Us</title>
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <nav>
+            <nav>
+                <ul class="ul1-bar">
+                    <li><img src="travel_logo.jpeg" alt="Logo" class="nav-icon"></li>
+                    <li class="travel-text">The KC Travel Partners</li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="./index.html" id="home">Home </a></li>
+                    <li><a href="./about_us.html" id="about">About Us </a></li>
+                    <li><a href="./contact_us.html" id="contact">Contact Us </a></li>
+                </ul>
+            </nav>
+        </nav>
+        <div class="container">
+            <div class="sidebar">
+                <div class="vline"></div>  
+                <ul class="social-icons no-bullets">
+                    <li><a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="https://twitter.com"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="https://instagram.com"><i class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+
+                <!--div class="test">
+                    <a href="https://facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="fab fa-instagram"></i></a>
+                    <a href="https://linkedin.com"><i class="fab fa-linkedin-in"></i></a>
+                </div -->
+                
+            </div>
+            <div class="contact-msg-content">
+                <div>
+                    <h1><strong>CONTACT US</strong></h1>
+                    <p>
+                        Get in touch<br>
+                    </p>
+                </div>
+                <div>                    
+                    <form action="#" method="post" style="max-width: 400px; min-width: 300px;">
+                        <label for="name" class="form-label">Name:</label><br>
+                        <input type="text" id="name" name="name" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+                    
+                        <label for="email"  class="form-label">Email:</label><br>
+                        <input type="email" id="email" name="email" required style="width:100%; padding:8px; margin-bottom:12px;"><br>
+                    
+                        <label for="message" class="form-label">Message:</label><br>
+                        <textarea id="message" name="message" rows="5" style="width:100%; padding:8px; margin-bottom:12px;" required></textarea><br>
+                    
+                        <button type="submit" onclick="thankyou()" style="padding:10px 16px;">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    <script>
+        function thankyou(){
+            alert('Thank you for contacting us!')
+        }
+    </script>
+    </body>
+</html>
